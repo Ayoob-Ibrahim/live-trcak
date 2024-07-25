@@ -1,0 +1,19 @@
+<header>
+    <div class="title">Map Viewer - Openlayers & Angular</div>
+</header>
+<main>
+    <div class="left-bar">
+        <ng-container [ngTemplateOutlet]="left_bar"></ng-container>
+    </div>
+    <div class="map-container">
+        <app-map [map]="map"></app-map>
+    </div>
+</main>
+<footer>
+    <app-scaleline [map]="map"></app-scaleline>
+    <app-mouse-position [map]="map" positionTemplate="{x}, {y} m"></app-mouse-position>
+</footer>
+
+
+<ng-template #left_bar>
+</ng-template>

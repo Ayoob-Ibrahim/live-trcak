@@ -1,0 +1,8 @@
+<p>excel-reader works!</p>
+<input type="file" (change)="onFileChange($event)" />
+<ng-container *ngIf="data">
+    <button class="button" (click)="download()">DOWNLOAD</button>
+</ng-container>
+<!-- JSON -->
+
+<pre>{{ data | json }}</pre>
