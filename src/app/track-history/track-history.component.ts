@@ -108,6 +108,8 @@ export class TrackHistoryComponent {
     const transformedCoordinate = fromLonLat(coordinate); // Convert to map projection
     const geometry = this.iconFeature.getGeometry() as Point;
     geometry.setCoordinates(transformedCoordinate);
-    this.vectorSource.changed(); // Notify the source that it has changed
+    this.vectorSource.changed(); 
   }
+
+  // Notify the source that it has changed
 }
